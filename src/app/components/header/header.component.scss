@@ -1,0 +1,94 @@
+// styles for main header
+.admin-header-top {
+    // background: #222222 url("/assets/images/admin/header_bg.png") repeat-x;    
+    background: linear-gradient(180deg,#343434 5%, #0c0c0c);
+    display: flex;
+    // link for main site name
+    .site-title {
+        font-size: 22px;
+        width: 23%;
+        text-indent: 1.8%;
+        line-height: 55px;
+        color: #fff;
+        text-decoration: none;
+        box-shadow: 4px -3px 5px #000;
+    }
+    // header to display current page name
+    .page-title {
+        font-size: 22px;
+        line-height: 55px;
+        color: #fff;
+        text-align: center;
+        text-indent: 4.5%;
+        width: 68%;
+    }
+}
+
+// styles for navigation header
+.admin-header-nav {
+    // background: #F1F1F4 url("/assets/images/admin/secondary_bar.png")  repeat-x;
+    background: linear-gradient(180deg,#ffffff 20%, #e0e3ec);
+    border-bottom: 1px solid #b8bcc6;
+    box-shadow: 5px 4px 2px #e4e4e7;
+    height: 33px;
+    display: flex;
+    // display user name in second navbar
+    .admin-header-username {
+        width: 23%;
+        box-shadow: 4px 0px 5px #b7b8ba;
+        span {
+            color: #666666;
+            font-weight: bold;
+            display: block;
+            width: 85%;
+            line-height: 35px;
+            text-indent: 25px;
+            margin-left: 6%;
+            font-size:12px;
+        }
+        .name-span {
+            display: initial;
+            margin-left: 0px;
+        }
+    }
+
+    // breadcrumbs to navigate pages inside portal
+    .admin-breadcrumbs-container {
+        width: 77%;
+        // background: url("/assets/images/admin/secondary_bar_shadow.png") no-repeat left top;
+        .admin-breadcrumbs {
+            float: left;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 1px 0 #fff;
+            height: 25px;
+            margin: 4px 3%;
+            display: flex;
+            a {
+                display: inline-block;
+                height: 24px;
+                line-height: 23px;
+                color: #9E9E9E;
+                font-weight: bold;
+                text-shadow: 0 1px 0 #fff;
+                text-decoration: none;
+                font-size:12px;
+                cursor: pointer;
+
+                &:link, &:visited {
+                    color: #44474F;
+                    text-decoration: none;
+                    text-shadow: 0 1px 0 #fff;
+                    font-weight: bold;
+                }
+            }
+            .admin-breadcrumbs-divider {
+                display: inline-block;
+                width: 12px;
+                height: 24px;
+                margin: 0 5px;
+            }
+        }
+    } 
+}

@@ -1,0 +1,12 @@
+@import "partials/reset";
+@import "vendor/grid";
+@import "partials/fonts";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/icons";
+@import "partials/shared";
+
+body{
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    background: #F8F8F8;
+}
